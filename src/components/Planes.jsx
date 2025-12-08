@@ -19,6 +19,9 @@ export default function Planes() {
           Elige el plan que mejor se adapte al crecimiento de tu negocio.
         </p>
       </motion.div>
+      <br>
+      </br>
+
 
       {/* Contenedor de planes */}
       <div className="grid gap-10 mt-16 md:grid-cols-3">
@@ -30,7 +33,7 @@ export default function Planes() {
         >
           <FaCheckCircle className="text-blue-600 text-5xl mb-4 mx-auto" />
           <h3 className="text-2xl font-semibold text-center text-gray-800">
-            Plan Básico
+            Plan básico
           </h3>
           <p className="text-center text-gray-700 mt-2">
             Ideal para pequeños negocios o nuevos emprendimientos.
@@ -41,10 +44,10 @@ export default function Planes() {
           </h4>
 
           <ul className="mt-6 space-y-3 text-gray-700">
-            <li>✔ Página web de 1 sección</li>
-            <li>✔ Diseño responsivo</li>
-            <li>✔ Integración a WhatsApp</li>
-            <li>✔ Hosting + dominio (opcional)</li>
+            <li>✔ Página web de 1 sección.</li>
+            <li>✔ Diseño responsivo.</li>
+            <li>✔ Integración a WhatsApp.</li>
+            <li>✔ Hosting + dominio (Opcional).</li>
           </ul>
 
           <a
@@ -62,7 +65,7 @@ export default function Planes() {
         >
           <FaBolt className="text-white text-5xl mb-4 mx-auto" />
           <h3 className="text-2xl font-semibold text-center">
-            Plan Profesional
+            Plan profesional
           </h3>
           <p className="text-center mt-2 opacity-90">
             Perfecto para negocios en crecimiento.
@@ -73,13 +76,13 @@ export default function Planes() {
           </h4>
 
           <ul className="mt-6 space-y-3 opacity-95">
-            <li>✔ Página web de hasta 5 secciones</li>
-            <li>✔ Panel de administración básico</li>
-            <li>✔ Optimización SEO inicial</li>
-            <li>✔ Certificado SSL + Hosting</li>
-            <li>✔ 1 mes de soporte</li>
+            <li>✔ Página web de hasta 5 secciones.</li>
+            <li>✔ Panel de administración básico.</li>
+            <li>✔ Certificado SSL + Hosting.</li>
+            <li>✔ 1 mes de soporte.</li>
           </ul>
-
+          <br>
+          </br>
           <a
             href="/contacto"
             className="mt-auto bg-white text-blue-700 w-full text-center py-3 rounded-xl hover:bg-gray-200 transition font-semibold"
@@ -95,7 +98,7 @@ export default function Planes() {
         >
           <FaCrown className="text-yellow-500 text-5xl mb-4 mx-auto" />
           <h3 className="text-2xl font-semibold text-center text-gray-800">
-            Plan Empresarial
+            Plan empresarial
           </h3>
           <p className="text-center text-gray-700 mt-2">
             La solución más completa para empresas.
@@ -113,6 +116,8 @@ export default function Planes() {
             <li>✔ 3 meses de soporte</li>
           </ul>
 
+          <br>
+          </br>
           <a
             href="/contacto"
             className="mt-auto bg-blue-600 text-white w-full text-center py-3 rounded-xl hover:bg-blue-700 transition font-semibold"

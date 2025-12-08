@@ -19,6 +19,7 @@ export default function Navbar() {
       {/* MENU DESKTOP */}
       <div className="hidden md:flex items-center gap-6">
         <a href="/" className="text-gray-700 hover:text-blue-600 transition">Inicio</a>
+        <a href="/nosotros" className="text-gray-700 hover:text-blue-600 transition">Nosotros</a>
         <a href="/beneficios" className="text-gray-700 hover:text-blue-600 transition">Beneficios</a>
         <a href="/planes" className="text-gray-700 hover:text-blue-600 transition">Planes</a>
 

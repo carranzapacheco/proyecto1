@@ -1,34 +1,67 @@
 import React from "react";
-import { FaMobileAlt, FaCogs, FaChartLine } from "react-icons/fa";
+import { Code, Cog, Globe } from "lucide-react";
+
+const services = [
+  {
+    category: "Desarrollo Web",
+    icon: Globe,
+    items: [
+      { name: "Páginas estáticas", desc: "Sitios informativos de impacto con carga rápida." },
+      { name: "Páginas empresariales", desc: "Soluciones completas para tu negocio online." },
+      { name: "Portafolios", desc: "Muestra tus trabajos de forma profesional." },
+    ],
+  },
+  {
+    category: "Desarrollo de Software",
+    icon: Code,
+    items: [
+      { name: "Sistemas a medida", desc: "Soluciones adaptadas a tus necesidades específicas." },
+      { name: "Sistemas administrativos", desc: "Gestión eficiente de tu negocio." },
+      { name: "Aplicaciones Web Avanzadas", desc: "Plataformas escalables y robustas." },
+    ],
+  },
+  {
+    category: "Servicios Adicionales",
+    icon: Cog,
+    items: [
+      { name: "Mantenimiento Web", desc: "Actualizaciones y soporte técnico continuo." },
+      { name: "Integración con APIs", desc: "Conecta tus sistemas con otras plataformas." },
+      { name: "Hosting y Dominio", desc: "Infraestructura confiable para tu presencia digital." },
+    ],
+  },
+];
 
 export default function Servicios() {
   return (
-    <section id="servicios" className="px-10 py-20 bg-gray-50">
-      <h3 className="text-3xl font-bold text-center text-blue-700">Servicios</h3>
+    <section id="servicios" className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-4xl font-bold text-center text-blue-700 mb-4">Nuestros Servicios</h2>
+        <p className="text-center text-muted-foreground mb-16 text-lg max-w-2xl mx-auto">
+          Ofrecemos soluciones digitales completas diseñadas para transformar tu visión en realidad,
+          combinando estrategia, diseño y tecnología para crear experiencias funcionales, atractivas y orientadas al crecimiento.
+        </p>
 
-      <div className="grid md:grid-cols-3 gap-10 mt-14">
-        <div className="p-8 bg-white rounded-2xl shadow-md text-center border hover:shadow-xl transition">
-          <FaMobileAlt className="text-blue-600 text-5xl mx-auto" />
-          <h4 className="mt-4 text-xl font-semibold">Páginas Web</h4>
-          <p className="mt-2 text-gray-700">
-            Diseños modernos, rápidos y optimizados para cualquier dispositivo.
-          </p>
-        </div>
-
-        <div className="p-8 bg-white rounded-2xl shadow-md text-center border hover:shadow-xl transition">
-          <FaCogs className="text-blue-600 text-5xl mx-auto" />
-          <h4 className="mt-4 text-xl font-semibold">Sistemas Web</h4>
-          <p className="mt-2 text-gray-700">
-            Gestión completa de ventas, clientes, inventario y más.
-          </p>
-        </div>
-
-        <div className="p-8 bg-white rounded-2xl shadow-md text-center border hover:shadow-xl transition">
-          <FaChartLine className="text-blue-600 text-5xl mx-auto" />
-          <h4 className="mt-4 text-xl font-semibold">Digitalización Total</h4>
-          <p className="mt-2 text-gray-700">
-            Soluciones integrales para potenciar tu crecimiento digital.
-          </p>
+        <div className="grid md:grid-cols-3 gap-8">
+          {services.map((service) => {
+            const Icon = service.icon;
+            return (
+              <div
+                key={service.category}
+                className="p-8 bg-card border border-border rounded-lg hover:shadow-lg transition-all"
+              >
+                <Icon className="w-10 h-10 text-primary mb-4" />
+                <h3 className="text-2xl font-bold text-foreground mb-6">{service.category}</h3>
+                <ul className="space-y-4">
+                  {service.items.map((item) => (
+                    <li key={item.name} className="pb-4 border-b border-border last:border-0">
+                      <h4 className="font-semibold text-foreground mb-1">{item.name}</h4>
+                      <p className="text-sm text-muted-foreground">{item.desc}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

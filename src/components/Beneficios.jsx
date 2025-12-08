@@ -84,20 +84,20 @@ export default function Beneficios() {
           <div className="bg-white p-6 rounded-xl shadow">
             <h5 className="text-xl font-semibold text-red-600">Antes</h5>
             <ul className="mt-3 text-gray-700 space-y-2">
-              <li>❌ Procesos lentos y manuales</li>
-              <li>❌ Uso de cuadernos o Excel básico</li>
-              <li>❌ Falta de control sobre inventario y ventas</li>
-              <li>❌ Limitado alcance de clientes</li>
+              <li>❌ Procesos lentos y manuales.</li>
+              <li>❌ Uso de cuadernos o Excel básico.</li>
+              <li>❌ Falta de control sobre inventario y ventas.</li>
+              <li>❌ Limitado alcance de clientes.</li>
             </ul>
           </div>
 
           <div className="bg-white p-6 rounded-xl shadow">
             <h5 className="text-xl font-semibold text-green-600">Después</h5>
             <ul className="mt-3 text-gray-700 space-y-2">
-              <li>✅ Sistemas rápidos y automatizados</li>
-              <li>✅ Base de datos organizada y segura</li>
-              <li>✅ Reportes y estadísticas en tiempo real</li>
-              <li>✅ Mayor visibilidad y ventas</li>
+              <li>✅ Sistemas rápidos y automatizados.</li>
+              <li>✅ Base de datos organizada y segura.</li>
+              <li>✅ Reportes y estadísticas en tiempo real.</li>
+              <li>✅ Mayor visibilidad y ventas.</li>
             </ul>
           </div>
         </div>
